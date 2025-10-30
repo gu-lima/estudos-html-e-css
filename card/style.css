@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: lightgray;
+}
+
+.botao {
+    display: block;
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding: 1.25rem;
+
+    background-color: orange;
+    color: black;
+    text-decoration: none;
+    width: fit-content;
+    border-radius: 1.25rem;
+}
+
+
+.inicio a {
+    padding: .5rem;
+    border-radius: .5rem;
+    text-decoration: none;
+}
+
+.botao:hover {
+    color: white;
+
+}
+
+h1 {
+    color: tomato;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.card img {
+    max-width: 80px;
+    width: 100%;
+}
+
+.card-flex {
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 1.25rem;
+    border: solid 2px;
+    background-color: bisque;
+
+    display: flex;
+    gap: 1rem;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    background-color: darksalmon;
+    border-radius: 1rem;
+    border: solid 2px;
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card h2 {
+    text-align: center;
+    margin: .5rem;
+}
+
+.card p {
+    padding: 1.25rem;
+}

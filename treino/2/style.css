@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: lightcyan;
+}
+
+main {
+    background-color: white;
+}
+
+.inicio {
+    background-color: lightskyblue;
+}
+
+.inicio ul {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding: 1.25rem;
+}
+
+.receita {
+    padding: 2rem 0;
+}
+
+.receita h2 {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.receita img {
+    border-radius: 1.5rem;
+    padding: 0 1.25rem;
+    width: 100%;
+}
+
+/* icone autor */
+
+.autor {
+    padding: 1.25rem;
+}
+
+.autor-imagem {
+    width: 60px;
+}
+
+.autor img {
+    border-radius: 4rem;
+    width: 100%;
+}
+
+.autor-caixa {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    flex-direction: column;
+}
+
+.texto-nome a{
+    color: blue;
+}
+
+/* modo de preparo */
+
+.modo-de-preparo h2{
+    margin: 1.25rem;
+}

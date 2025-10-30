@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: lightcyan;
+}
+
+header {
+    width: 1020px;
+    margin: 0 auto;
+}
+
+.nav-caixa {
+    width: 100px;
+}
+
+.nav-caixa img {
+    width: 100%;
+}
+
+.nav-menu-inicial {
+    padding: 0 1.25rem;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pesquisar {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+}
+.pesquisar a{
+    border-radius: 1rem;
+    padding: .5rem 1rem;
+    border: solid 2px;
+    background-color: orange;
+}
+
+.pesquisar input{
+    padding: .5rem;
+    border-radius: .5rem;
+    border: solid 1px;
+}
+
+/* categorias */
+
+.nav-menu-categorias ul {
+    justify-content: space-around;
+    flex-grow: 0;
+    display: flex;
+    background-color: orange;
+}
+
+.nav-menu-categorias ul li {
+    padding: 1rem;
+}
+
+.nav-menu-categorias a {
+    padding: 1rem;
+    color: white;
+}
+
+.nav-menu-categorias a:hover {
+    color: black;
+    background-color: rgb(214, 139, 0);
+}
+
+.icone-legal {
+    font-size: 2.2rem;
+}
+
+.icone-legal:hover {
+    cursor: pointer;
+    color: orange;
+}
+
+/* inicio  */
+
+main {
+    margin: 0 auto;
+    width: 1020px;
+    background-color: white;
+    padding: 1.25rem;
+}
+
+.inicio {
+    padding: 4rem 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inicio img{
+    border-radius: 2rem;
+}
+
+/* site referencia https://www.tudogostoso.com.br/receita/29124-bolo-simples.html */
+
+.inicio img {
+    margin-top: 1rem;
+}
+
+.autor-caixa {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.autor-imagem {
+    width: 60px;
+}
+
+.autor-imagem img {
+    width: 100%;
+    border-radius: 4rem;
+}
+
+.autor-texto p {
+    padding: 1rem 0;
+}
+
+/* ingredientes */
+
+.ingredientes,
+.ingredientes h2,
+.utensilios,
+.utensilios h2 {
+    margin: 2rem 0;
+}
+
+.ingredientes-caixa,
+.utensilios-caixa {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.ingredientes-flex,
+.utensilios-flex {
+    
+    justify-content: space-around;
+    margin: 1rem 0;
+    height: 100px;
+    padding: 1.25rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: solid 1px rgb(161, 161, 161);
+    border-radius: 1rem;
+    width: max-content;
+    width: 400px;
+}
+
+.botao-comprar {
+    border: solid 1px black;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: orange;
+    color: white;
+}
+
+.botao-comprar:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.ingredientes-imagem,
+.utensilios-imagem {
+    width: 6rem;
+    padding: 1rem;
+}
+
+.ingredientes-imagem img {
+    width: 100%;
+}
+
+.ingredientes-flex:hover,
+.utensilios-flex:hover {
+    scale: 1.01;
+    transition: .2s;
+    border: tomato solid;
+}
+
+.utensilios span {
+    display: block;
+    font-size: .9rem;
+    font-weight: 400;
+    color: rgb(150, 150, 150);
+    text-align: center;
+}
+
+/* modo de preparo */
+
+.centralizar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 4rem 0;
+    gap: .3rem;
+}
+
+.caixa-preparo i {
+    font-size: 1.25rem;
+    color: orange;
+
+}
+
+.preparo-icones {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.caixa-preparo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.botao-receita {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: white;
+    background-color: orange;
+}
+
+.botao-receita:hover {
+    cursor: pointer;
+    color: black;
+}
+
+/* ffooter */
+
+footer {
+    width: 1020px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgray;
+    padding-bottom: 3rem;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 1rem;
+}

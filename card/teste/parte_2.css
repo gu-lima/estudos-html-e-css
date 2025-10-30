@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif
+}
+
+body {
+    background-color: lightcyan;
+}
+
+
+.inicio a {
+    background-color: orange;
+    padding: .5rem;
+    border-radius: .5rem;
+    text-decoration: none;
+}
+
+.inicio a:hover {
+    color: white;
+}
