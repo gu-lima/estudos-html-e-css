@@ -2,21 +2,275 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif
+    font-family: sans-serif;
+    text-decoration: none;
 }
 
 body {
     background-color: lightcyan;
 }
 
+h1 {
+    font-size: clamp(1.6rem, 3vw, 3rem);
 
-.inicio a {
-    background-color: orange;
-    padding: .5rem;
-    border-radius: .5rem;
-    text-decoration: none;
 }
 
-.inicio a:hover {
+h2 {
+    font-size: clamp(1.25rem, 2.25vw, 2.2rem);
+
+}
+
+p {
+    font-size: clamp(.8rem, 2vw, 1.12rem);
+
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+header nav a{
+    padding: 1rem;
+    border: solid 1px;
+    color: black;
+}
+
+header nav a:hover{
+    text-decoration: underline;
+    color: orange;
+}
+
+.logo img {
+    max-width: 100%;
+    width: 40px;
+}
+
+.interface {
+    width: clamp(320px, 90vw, 1200px);
+    margin: 0 auto;
+}
+
+.catatau-the-god {
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+}
+
+.icone-menu {
+    display: none;
+    font-size: 2rem;
+}
+
+/* conteudo */
+
+.conteudo-texto {
+    margin: 1rem;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1rem;
+}
+
+.botao {
+    padding: 1rem;
+    background-color: orange;
+    width: fit-content;
+    text-decoration: none;
+    border-radius: 1rem;
+    border: solid 1px black;
+}
+
+.icone-usuario {
+    padding: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+}
+
+.icone-usuario img {
+    border-radius: 2rem;
+    background-color: pink;
+    max-width: 100%;
+    width: 2rem;
+}
+
+.icone-usuario span {
+    margin-left: 1rem;
+    font-weight: 600;
+    color: darkslategrey;
+}
+
+.icone-imagem {
+    margin: 1.25rem;
+}
+
+.fundo,
+.inicio-texto img,
+.terceira-texto img {
+    max-width: 100%;
+    width: fit-content;
+    background-size: cover;
+    border-radius: 1rem
+}
+
+/* inicio  */
+
+.inicio {
+    background-color: lightsteelblue;
+}
+
+.card {
+    padding: 1.25rem;
+    display: flex;
+    flex-flow: column;
+    gap: .5rem;
+}
+
+.inicio-caixa {
+    padding: 1.25rem;
+    display: flex;
+    flex-flow: row;
+    flex: 1 0 auto;
+
+    border-radius: .5rem;
+    border: solid 1px;
+    align-items: center;
+    gap: 1rem;
+
+    background-color: bisque;
+}
+
+
+.inicio-caixa img {
+    max-width: 100%;
+    width: 50px;
+}
+
+.inicio-texto {
+    padding: 1.25rem 0;
+}
+
+.inicio-texto {
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+}
+
+.terceira-texto {
+    flex-flow: column nowrap;
+    display: flex;
+    padding: 1.25rem;
+    gap: 1rem;
+}
+
+/* card do meio */
+
+.card-do-meio {
+    background-color: lightsteelblue;
+}
+
+.caixa-card {
+    border-radius: 1rem;
+    background-color: bisque;
+
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding: 0 1.25rem;
+    margin: 1.25rem;
+    border: solid 1px ;
+
+}
+
+.caixa-meio {
+    padding: 1.25rem 0;
+}
+
+.caixa-meio h2 {
+    width: 50%;
+    margin: 1rem 0;
+}
+
+.caixa-texto {
+    display: flex;
+    flex-flow: wrap;
+    margin: 1.25rem 0;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.caixa-texto img {
+    max-width: 100%;
+    width: 50px;
+}
+
+/* parte do dinheiro */
+/* 
+.money{
+    background-color: lightyellow;
+} */
+
+.flex-money {
+    border: solid 1px red;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.money-h2 {
+    text-align: left;
+    padding: 1.25rem;
+    flex-wrap: wrap;
+    width: clamp(82px, 50vw, 100%)
+}
+
+.caixa-money {
+    margin: 1.25rem;
+    padding: 1rem;
+    border: solid 1px blue;
+    border-radius: 1rem;
+
+    background-color: bisque;
+    gap: .5rem;
+    display: flex;
+    flex-flow: column wrap;
+
+    flex-shrink: 0;
+    width: clamp(280px, 30vw, 600px);
+}
+
+.botao-money {
+    border-radius: 1rem;
+    padding: 1rem;
+    border: outset solid 1px;
+    background-color: orange;
     color: white;
+}
+
+.botao-money:hover{
+    color: black;
+    cursor: pointer;
+}
+
+@media (max-width: 1010px) {
+  header nav {
+    display: none;
+  }
+
+  .icone-menu{
+    display: block;
+  }
 }
