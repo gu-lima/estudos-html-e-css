@@ -40,13 +40,13 @@ header nav {
     gap: 1rem;
 }
 
-header nav a{
+header nav a {
     padding: 1rem;
     border: solid 1px;
     color: black;
 }
 
-header nav a:hover{
+header nav a:hover {
     text-decoration: underline;
     color: orange;
 }
@@ -189,7 +189,7 @@ header nav a:hover{
     justify-content: center;
     padding: 0 1.25rem;
     margin: 1.25rem;
-    border: solid 1px ;
+    border: solid 1px;
 
 }
 
@@ -224,7 +224,6 @@ header nav a:hover{
 } */
 
 .flex-money {
-    border: solid 1px red;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -249,7 +248,7 @@ header nav a:hover{
     flex-flow: column wrap;
 
     flex-shrink: 0;
-    width: clamp(280px, 30vw, 600px);
+    width: clamp(280px, 10vw, 600px);
 }
 
 .botao-money {
@@ -260,17 +259,18 @@ header nav a:hover{
     color: white;
 }
 
-.botao-money:hover{
+.botao-money:hover {
+    background-color:white;
     color: black;
     cursor: pointer;
 }
 
 @media (max-width: 1010px) {
-  header nav {
-    display: none;
-  }
+    header nav {
+        display: none;
+    }
 
-  .icone-menu{
-    display: block;
-  }
+    .icone-menu {
+        display: block;
+    }
 }
